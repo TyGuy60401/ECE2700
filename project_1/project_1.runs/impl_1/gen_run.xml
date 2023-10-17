@@ -1,85 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1697143326">
-  <File Type="ROUTE-PWR" Name="full_add_power_routed.rpt"/>
+  <File Type="ROUTE-PWR" Name="full_subtract_4_power_routed.rpt"/>
   <File Type="PA-TCL" Name="full_add.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="full_add_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-SUM" Name="full_subtract_4_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="full_add_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="full_add_rqa_opted.pb"/>
-  <File Type="BITSTR-MMI" Name="full_add.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="full_add_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="full_add_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="full_add_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="full_add_opt.dcp"/>
-  <File Type="OPT-DRC" Name="full_add_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="full_add.hwdef"/>
-  <File Type="PWROPT-DCP" Name="full_add_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="full_add_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="full_add_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="full_add_placed.dcp"/>
-  <File Type="PLACE-IO" Name="full_add_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="full_add_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="full_add_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="full_add_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="full_add_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="full_add_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="full_add_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="full_add.bin"/>
-  <File Type="PLACE-TIMING" Name="full_add_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="full_add_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="full_add_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="full_add_postplace_pwropt.dcp"/>
   <File Type="BITSTR-MSK" Name="full_add.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="full_add_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="full_add_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="full_add_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="full_add.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="full_add_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="full_add_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="full_add_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="full_add_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="full_add_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="full_add_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="full_add_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="full_add_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="full_add_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="full_add_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="full_add_rqs_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="full_add_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="full_add_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="full_add_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="full_add_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="full_add_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="full_add_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="full_add_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="full_add_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="full_add_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="full_add_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="full_add_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="full_add_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="full_add_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="full_add_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="full_add_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="full_add_bus_skew_postroute_physopted.rpt"/>
+  <File Type="ROUTE-CLK" Name="full_subtract_4_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="full_add.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="full_subtract_4_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="full_add.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="full_add_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="full_add_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-DRC" Name="full_add.drc"/>
+  <File Type="BG-BGN" Name="full_add.bgn"/>
+  <File Type="BG-BIN" Name="full_add.bin"/>
+  <File Type="BITSTR-RBT" Name="full_add.rbt"/>
   <File Type="BITSTR-NKY" Name="full_add.nky"/>
   <File Type="BITSTR-BMM" Name="full_add_bd.bmm"/>
-  <File Type="PDI-FILE" Name="full_add.pdi"/>
+  <File Type="BITSTR-MMI" Name="full_add.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="full_subtract_4_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="full_add.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="full_subtract_4_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="full_add.ltx"/>
   <File Type="BOOT-PDI-FILE" Name="full_add_soc.pdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="full_add.npi"/>
+  <File Type="OPT-DRC" Name="full_subtract_4_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="full_add.rbd"/>
+  <File Type="OPT-HWDEF" Name="full_add.hwdef"/>
+  <File Type="PLACE-IO" Name="full_subtract_4_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="full_subtract_4_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="full_subtract_4_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="full_subtract_4_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="full_add_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="full_subtract_4_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="full_subtract_4_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="full_subtract_4_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="full_subtract_4_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="full_subtract_4_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="full_add_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="full_add_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="full_add_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="full_subtract_4_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="full_add_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="full_subtract_4_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="full_subtract_4_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="full_subtract_4_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="full_subtract_4_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="full_subtract_4_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="full_add_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="full_add_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="full_add_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="full_add_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="full_add_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="full_add_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="full_add_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="full_subtract_4_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="full_subtract_4_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="full_subtract_4_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="full_subtract_4_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="full_subtract_4_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="full_subtract_4_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="full_subtract_4_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="full_add.pdi"/>
   <File Type="PL-PDI-FILE" Name="full_add_pld.pdi"/>
   <File Type="RCFI_FILE" Name="full_add.rcfi"/>
   <File Type="CFI_FILE" Name="full_add.cfi"/>
   <File Type="RNPI_FILE" Name="full_add.rnpi"/>
-  <File Type="NPI_FILE" Name="full_add.npi"/>
-  <File Type="RBD_FILE" Name="full_add.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="full_add.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="full_add.sysdef"/>
-  <File Type="BG-BGN" Name="full_add.bgn"/>
-  <File Type="BG-DRC" Name="full_add.drc"/>
-  <File Type="RDI-RDI" Name="full_add.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="full_add_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="full_add_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -111,9 +97,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -123,5 +107,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

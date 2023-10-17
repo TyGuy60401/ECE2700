@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1697143238">
   <File Type="PA-TCL" Name="full_add.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="full_add_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="full_add_reports.tcl"/>
   <File Type="RDS-RDS" Name="full_add.vds"/>
-  <File Type="RDS-UTIL" Name="full_add_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="full_add_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="full_subtract_4_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="full_subtract_4_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="full_add.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="full_add_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="full_add_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/full_add.vhd">
@@ -36,9 +33,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

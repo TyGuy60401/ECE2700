@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tydav/gitLocals/ECE2700/project_1/project_1.srcs/sim_1/new/full_add_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tydav/gitLocals/ECE2700/project_1/project_1.srcs/sim_1/new/full_add_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'full_add_test'
