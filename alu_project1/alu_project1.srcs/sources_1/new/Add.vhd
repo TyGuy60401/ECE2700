@@ -34,6 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Add is
     Port ( A : in STD_LOGIC_VECTOR (7 downto 0);
            B : in STD_LOGIC_VECTOR (7 downto 0);
+           Cin: in STD_LOGIC_VECTOR (7 downto 0);
            Y : out STD_LOGIC_VECTOR (7 downto 0);
            Cout : out STD_LOGIC);
 end Add;
@@ -44,13 +45,13 @@ component full_add is
           Y, Cout: out std_logic );
 end component;
 
-signal Cin: std_logic := '0';
+signal Cb: std_logic := '0';
 signal C: std_logic_vector (6 downto 0);
 begin
 
 A0 : full_add port map (A=>A(0),
                         B=>B(0),
-                        Cin=>Cin,
+                        Cin=>Cb,
                         Y=>Y(0),
                         Cout=>C(0));
 A1 : full_add port map (A=>A(1),
