@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tydav/gitLocals/ECE2700/alu_project1/alu_project1.srcs/sources_1/new/Xor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Xorr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tydav/gitLocals/ECE2700/alu_project1/alu_project1.srcs/sources_1/new/xor_single.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xor_single'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tydav/gitLocals/ECE2700/alu_project1/alu_project1.srcs/sim_1/new/Xor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Xor_tb'

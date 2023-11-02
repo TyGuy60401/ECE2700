@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Oct 12 14:42:19 2023
-# Process ID: 45668
+# Start of session at: Thu Oct 19 14:13:58 2023
+# Process ID: 29556
 # Current directory: C:/Users/tydav/gitLocals/ECE2700/project_1/project_1.runs/impl_1
-# Command line: vivado.exe -log full_add.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source full_add.tcl -notrace
-# Log file: C:/Users/tydav/gitLocals/ECE2700/project_1/project_1.runs/impl_1/full_add.vdi
+# Command line: vivado.exe -log full_add_4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source full_add_4.tcl -notrace
+# Log file: C:/Users/tydav/gitLocals/ECE2700/project_1/project_1.runs/impl_1/full_add_4.vdi
 # Journal file: C:/Users/tydav/gitLocals/ECE2700/project_1/project_1.runs/impl_1\vivado.jou
 # Running On: TyIdeaPad5, OS: Windows, CPU Frequency: 2371 MHz, CPU Physical cores: 6, Host memory: 7909 MB
 #-----------------------------------------------------------
-source full_add.tcl -notrace
+source full_add_4.tcl -notrace
