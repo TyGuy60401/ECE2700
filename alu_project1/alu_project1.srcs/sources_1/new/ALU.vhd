@@ -42,29 +42,40 @@ end ALU;
 
 architecture Behavioral of ALU is
     component Addc is
-        port (A_Addc, B_Addc, Cin_Addc : in std_logic;
-              Y_Addc, Cout_Addc: out std_logic);
+        port (A_Addc, B_Addc : in std_logic_vector (7 downto 0);
+              Cin_Addc : in std_logic;
+              Y_Addc : out std_logic_vector (7 downto 0);
+              Cout_Addc: out std_logic);
     end component;
     component Add is
-        port (A_Add, B_Add, Cin_Add : in std_logic;
-              Y_Add, Cout_Add: out std_logic);
+        port (A_Add, B_Add : in std_logic_vector (7 downto 0);
+              Cin_Add : in std_logic;
+              Y_Add : out std_logic_vector (7 downto 0);
+              Cout_Add: out std_logic);
     end component;
     component Xorr is
-        port (A_Xorr, B_Xorr, Cin_Xorr : in std_logic;
-              Y_Xorr, Cout_Xorr: out std_logic);
+        port (A_Xorr, B_Xorr : in std_logic_vector (7 downto 0);
+              Cin_Xorr : in std_logic;
+              Y_Xorr : out std_logic_vector (7 downto 0);
+              Cout_Xorr: out std_logic);
     end component;
     component Load is
-        port (A_Load, B_Load, Cin_Load : in std_logic;
-              Y_Load, Cout_Load: out std_logic);
+        port (A_Load, B_Load : in std_logic_vector (7 downto 0);
+              Cin_Load : in std_logic;
+              Y_Load : out std_logic_vector (7 downto 0);
+              Cout_Load: out std_logic);
     end component;
     component Hold is
-        port (A_Hold, B_Hold, Cin_Hold : in std_logic;
-              Y_Hold, Cout_Hold: out std_logic);
+        port (A_Hold, B_Hold : in std_logic_vector (7 downto 0);
+              Cin_Hold : in std_logic;
+              Y_Hold : out std_logic_vector (7 downto 0);
+              Cout_Hold: out std_logic);
     end component;
 begin
 Y <= "00001111";
 process is 
 begin
+     wait for 200 ns;
      if Op(2) = '0' then
          Y <= "11111111";
      else
