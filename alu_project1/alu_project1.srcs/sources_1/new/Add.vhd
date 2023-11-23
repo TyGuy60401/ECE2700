@@ -34,7 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Add is
     Port ( A : in STD_LOGIC_VECTOR (7 downto 0);
            B : in STD_LOGIC_VECTOR (7 downto 0);
-           Cin: in STD_LOGIC_VECTOR (7 downto 0);
+           Cin: in STD_LOGIC;
            Y : out STD_LOGIC_VECTOR (7 downto 0);
            Cout : out STD_LOGIC);
 end Add;

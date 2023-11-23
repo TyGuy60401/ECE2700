@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -59,15 +59,28 @@ begin
 
     -- Stimulus process
     process
+        variable test: unsigned(2 downto 0);
     begin
-        A <= "11111111";
-        Op <= "111";
-        wait for 100 ns;
-        Op <= "101";
-        wait for 100 ns;
-        Op <= "011";
-        wait for 100 ns;
-        Op <= "000";
+        for i in 0 to 4 loop
+            test := to_unsigned(i, 3);
+            Op <= std_logic_vector(test(2 downto 0));
+            A <= "00000000";
+            B <= "00000000";
+            Cin <= '1';
+            wait for 20 ns;
+            A <= "01111111";
+            B <= "10000001";
+            Cin <= '0';
+            wait for 20 ns;
+            A <= "10011010";
+            B <= "01100101";
+            Cin <= '1';
+            wait for 20 ns;
+            A <= "01101011";
+            B <= "10001111";
+            Cin <= '1';
+            wait for 20 ns;
+        end loop;
         wait;
     
     end process;

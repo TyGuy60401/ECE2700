@@ -41,47 +41,81 @@ entity ALU is
 end ALU;
 
 architecture Behavioral of ALU is
-    component Addc is
-        port (A_Addc, B_Addc : in std_logic_vector (7 downto 0);
-              Cin_Addc : in std_logic;
-              Y_Addc : out std_logic_vector (7 downto 0);
-              Cout_Addc: out std_logic);
-    end component;
     component Add is
-        port (A_Add, B_Add : in std_logic_vector (7 downto 0);
-              Cin_Add : in std_logic;
-              Y_Add : out std_logic_vector (7 downto 0);
-              Cout_Add: out std_logic);
+        port (A, B : in std_logic_vector (7 downto 0);
+              Cin : in std_logic;
+              Y : out std_logic_vector (7 downto 0);
+              Cout: out std_logic);
+    end component;
+    component Addc is
+        port (A, B : in std_logic_vector (7 downto 0);
+              Cin : in std_logic;
+              Y : out std_logic_vector (7 downto 0);
+              Cout : out std_logic);
     end component;
     component Xorr is
-        port (A_Xorr, B_Xorr : in std_logic_vector (7 downto 0);
-              Cin_Xorr : in std_logic;
-              Y_Xorr : out std_logic_vector (7 downto 0);
-              Cout_Xorr: out std_logic);
+        port (A, B : in std_logic_vector (7 downto 0);
+              Cin : in std_logic;
+              Y : out std_logic_vector (7 downto 0);
+              Cout : out std_logic);
     end component;
     component Load is
-        port (A_Load, B_Load : in std_logic_vector (7 downto 0);
-              Cin_Load : in std_logic;
-              Y_Load : out std_logic_vector (7 downto 0);
-              Cout_Load: out std_logic);
+        port (A, B : in std_logic_vector (7 downto 0);
+              Cin : in std_logic;
+              Y : out std_logic_vector (7 downto 0);
+              Cout : out std_logic);
     end component;
     component Hold is
-        port (A_Hold, B_Hold : in std_logic_vector (7 downto 0);
-              Cin_Hold : in std_logic;
-              Y_Hold : out std_logic_vector (7 downto 0);
-              Cout_Hold: out std_logic);
+        port (A, B : in std_logic_vector (7 downto 0);
+              Cin : in std_logic;
+              Y : out std_logic_vector (7 downto 0);
+              Cout : out std_logic);
     end component;
+
+    signal Result, Y0, Y1, Y2, Y3, Y4 : std_logic_vector (8 downto 0);
 begin
-Y <= "00001111";
-process is 
-begin
-     wait for 200 ns;
-     if Op(2) = '0' then
-         Y <= "11111111";
-     else
-         Y <= "00000000";
-     end if;
-     wait;
-end process;
+    m_Add : Add port map (
+        A => A,
+        B => B,
+        Cin => Cin,
+        Y => Y0 (7 downto 0),
+        Cout => Y0 (8)
+    );
+    m_Addc : Addc port map (
+        A => A,
+        B => B,
+        Cin => Cin,
+        Y => Y1 (7 downto 0),
+        Cout => Y1 (8)
+    );
+    m_Xorr : Xorr port map (
+        A => A,
+        B => B,
+        Cin => Cin,
+        Y => Y2 (7 downto 0),
+        Cout => Y2 (8)
+    );
+    m_Load : Load port map (
+        A => A,
+        B => B,
+        Cin => Cin,
+        Y => Y3 (7 downto 0),
+        Cout => Y3 (8)
+    );
+    m_Hold : Hold port map (
+        A => A,
+        B => B,
+        Cin => Cin,
+        Y => Y4 (7 downto 0),
+        Cout => Y4 (8)
+    );
+
+Result <= Y0 when Op = "000" else
+    Y1 when Op = "001" else
+    Y2 when Op = "010" else
+    Y3 when Op = "011" else
+    Y4;
+Y <= Result (7 downto 0);
+Cout <= Result (8);
 
 end Behavioral;

@@ -11,6 +11,14 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.full_add [full_add_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add [add_default]
+Compiling architecture behavioral of entity xil_defaultlib.Addc [addc_default]
+Compiling architecture behavioral of entity xil_defaultlib.xor_single [xor_single_default]
+Compiling architecture behavioral of entity xil_defaultlib.Xorr [xorr_default]
+Compiling architecture behavioral of entity xil_defaultlib.Load [load_default]
+Compiling architecture behavioral of entity xil_defaultlib.Hold [hold_default]
 Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
 Compiling architecture behavioral of entity xil_defaultlib.alu_tb
 Built simulation snapshot ALU_tb_behav
