@@ -29,19 +29,19 @@ architecture Behavioral of TestMicro3 is
            data : inout STD_LOGIC_VECTOR (7 downto 0));
     end component;
 
-    constant op_halt:  std_logic_vector(7 downto 0) := X"00";
-	constant op_jmp:   std_logic_vector(7 downto 0) := X"01";
-	constant op_jc:    std_logic_vector(7 downto 0) := X"02";
-	constant op_jnc:   std_logic_vector(7 downto 0) := X"03";
-	constant op_ldi:   std_logic_vector(7 downto 0) := X"10";
-	constant op_addi:  std_logic_vector(7 downto 0) := X"11";
-	constant op_adci:  std_logic_vector(7 downto 0) := X"12";
-	constant op_xori:  std_logic_vector(7 downto 0) := X"13";
-	constant op_ldm:   std_logic_vector(7 downto 0) := X"20";
-	constant op_addm:  std_logic_vector(7 downto 0) := X"21";
-	constant op_adcm:  std_logic_vector(7 downto 0) := X"22";
-	constant op_xorm:  std_logic_vector(7 downto 0) := X"23";
-	constant op_stm:   std_logic_vector(7 downto 0) := X"30";
+    constant op_halt:  std_logic_vector(7 downto 0) := X"00"; -- Halt
+	constant op_jmp:   std_logic_vector(7 downto 0) := X"01"; -- Jump
+	constant op_jc:    std_logic_vector(7 downto 0) := X"02"; -- Jump if Carry
+	constant op_jnc:   std_logic_vector(7 downto 0) := X"03"; -- Jump if No Carry
+	constant op_ldi:   std_logic_vector(7 downto 0) := X"10"; -- Load Immediate
+	constant op_addi:  std_logic_vector(7 downto 0) := X"11"; -- Add Immediate
+	constant op_adci:  std_logic_vector(7 downto 0) := X"12"; -- Add Immediate with Carry
+	constant op_xori:  std_logic_vector(7 downto 0) := X"13"; -- Exclusive-Or Immediate
+	constant op_ldm:   std_logic_vector(7 downto 0) := X"20"; -- Load Memory
+	constant op_addm:  std_logic_vector(7 downto 0) := X"21"; -- Add Memory
+	constant op_adcm:  std_logic_vector(7 downto 0) := X"22"; -- Add Memory with Carry
+	constant op_xorm:  std_logic_vector(7 downto 0) := X"23"; -- Exclusive-Or Memory
+	constant op_stm:   std_logic_vector(7 downto 0) := X"30"; -- Store Memory
 
 	type ram_type is array (0 to 255) of STD_LOGIC_VECTOR (7 downto 0);
 	signal ram: ram_type := (

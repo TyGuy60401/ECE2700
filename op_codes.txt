@@ -1,0 +1,9 @@
+ldi 9E
+addi AA
+stm 3F
+adcm 3F
+stm 3F
+adci 7b
+xorm 3f
+jc 28
+halt
