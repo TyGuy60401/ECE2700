@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Calc.srcs/sources_1/new/Calculator.vhd" \
+"../../../../Calc.srcs/sources_1/new/DFF.vhd" \
+"../../../../Calc.srcs/sources_1/new/MEM_16x8.vhd" \
+"../../../../Calc.srcs/sources_1/new/calc_controller_moore.vhd" \
+"../../../../Calc.srcs/sources_1/new/debouncer.vhd" \
+"../../../../Calc.srcs/sim_1/new/Calculator_TB.vhd" \
+
+# Do not sort compile order
+nosort

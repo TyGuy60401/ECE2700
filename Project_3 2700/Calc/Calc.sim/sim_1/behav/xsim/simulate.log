@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+Error: acc didn't load 7 from ui
+Time: 180 ns  Iteration: 0  Process: /Calculator_TB/line__80  File: C:/Users/tydav/gitLocals/ECE2700/Project_3 2700/Calc/Calc.srcs/sim_1/new/Calculator_TB.vhd
+Error: acc didn't add 5 to 7
+Time: 340 ns  Iteration: 0  Process: /Calculator_TB/line__80  File: C:/Users/tydav/gitLocals/ECE2700/Project_3 2700/Calc/Calc.srcs/sim_1/new/Calculator_TB.vhd
+Error: acc didn't load 7 from ui
+Time: 520 ns  Iteration: 0  Process: /Calculator_TB/line__80  File: C:/Users/tydav/gitLocals/ECE2700/Project_3 2700/Calc/Calc.srcs/sim_1/new/Calculator_TB.vhd
+Error: acc didn't add 5 to 7
+Time: 680 ns  Iteration: 0  Process: /Calculator_TB/line__80  File: C:/Users/tydav/gitLocals/ECE2700/Project_3 2700/Calc/Calc.srcs/sim_1/new/Calculator_TB.vhd
+Error: acc didn't load 7 from ui
+Time: 860 ns  Iteration: 0  Process: /Calculator_TB/line__80  File: C:/Users/tydav/gitLocals/ECE2700/Project_3 2700/Calc/Calc.srcs/sim_1/new/Calculator_TB.vhd

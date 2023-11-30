@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/ALU.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/ALU_ACC.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calc_p2/Calc_p2.srcs/sources_1/new/DFFR.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calc_p2/Calc_p2.srcs/sources_1/new/DFFR_9.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/MUX_B.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/UI_MUX.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/addc.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/adder.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/exclusiveOr.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/hold.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/load.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/mux5.vhd" \
+"../../../../p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sim_1/new/ALU_ACC_TB.vhd" \
+
+# Do not sort compile order
+nosort

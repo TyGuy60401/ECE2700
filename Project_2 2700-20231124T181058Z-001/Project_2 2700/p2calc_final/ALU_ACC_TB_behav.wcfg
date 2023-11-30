@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ALU_ACC_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ALU_ACC_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="171800001fs"></ZoomEndTime>
+      <Cursor1Time time="530000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/ALU_ACC_TB/INPUT_SEL_TB" type="logic">
+      <obj_property name="ElementShortName">INPUT_SEL_TB</obj_property>
+      <obj_property name="ObjectShortName">INPUT_SEL_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/CE_TB" type="logic">
+      <obj_property name="ElementShortName">CE_TB</obj_property>
+      <obj_property name="ObjectShortName">CE_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/opcode_test_vectors" type="array">
+      <obj_property name="ElementShortName">opcode_test_vectors[0:4][2:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode_test_vectors[0:4][2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/MuxBuffer_WRITE" type="logic">
+      <obj_property name="ElementShortName">MuxBuffer_WRITE</obj_property>
+      <obj_property name="ObjectShortName">MuxBuffer_WRITE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/MuxBuffer_LOAD" type="logic">
+      <obj_property name="ElementShortName">MuxBuffer_LOAD</obj_property>
+      <obj_property name="ObjectShortName">MuxBuffer_LOAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/InputMux_UI" type="logic">
+      <obj_property name="ElementShortName">InputMux_UI</obj_property>
+      <obj_property name="ObjectShortName">InputMux_UI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/InputMux_BUS" type="logic">
+      <obj_property name="ElementShortName">InputMux_BUS</obj_property>
+      <obj_property name="ObjectShortName">InputMux_BUS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/op_addc" type="array">
+      <obj_property name="ElementShortName">op_addc[2:0]</obj_property>
+      <obj_property name="ObjectShortName">op_addc[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/op_add" type="array">
+      <obj_property name="ElementShortName">op_add[2:0]</obj_property>
+      <obj_property name="ObjectShortName">op_add[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/op_xor" type="array">
+      <obj_property name="ElementShortName">op_xor[2:0]</obj_property>
+      <obj_property name="ObjectShortName">op_xor[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/op_hold" type="array">
+      <obj_property name="ElementShortName">op_hold[2:0]</obj_property>
+      <obj_property name="ObjectShortName">op_hold[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/op_load" type="array">
+      <obj_property name="ElementShortName">op_load[2:0]</obj_property>
+      <obj_property name="ObjectShortName">op_load[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/A_test_vectors" type="array">
+      <obj_property name="ElementShortName">A_test_vectors[0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">A_test_vectors[0:3][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/B_test_vectors" type="array">
+      <obj_property name="ElementShortName">B_test_vectors[0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">B_test_vectors[0:3][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/RST_TB" type="logic">
+      <obj_property name="ElementShortName">RST_TB</obj_property>
+      <obj_property name="ObjectShortName">RST_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/WR_SEL_TB" type="logic">
+      <obj_property name="ElementShortName">WR_SEL_TB</obj_property>
+      <obj_property name="ObjectShortName">WR_SEL_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/CLK_TB" type="logic">
+      <obj_property name="ElementShortName">CLK_TB</obj_property>
+      <obj_property name="ObjectShortName">CLK_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/OP_ALU_TB" type="array">
+      <obj_property name="ElementShortName">OP_ALU_TB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_ALU_TB[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/UI_TB" type="array">
+      <obj_property name="ElementShortName">UI_TB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">UI_TB[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/DB_TB" type="array">
+      <obj_property name="ElementShortName">DB_TB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DB_TB[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/UUT/U2/d" type="array">
+      <obj_property name="ElementShortName">d[8:0]</obj_property>
+      <obj_property name="ObjectShortName">d[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_ACC_TB/UUT/U2/q" type="array">
+      <obj_property name="ElementShortName">q[8:0]</obj_property>
+      <obj_property name="ObjectShortName">q[8:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,28 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/ADDR_MUX.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/ALU.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/ALU_ACC.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/AM_4.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc_Datapath.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/Calculator.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/DFF.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/DFFR.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/DFFR_4.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/DFFR_9.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/MAC_4.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/MEM_16x8.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/MUX_B.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/UI_MUX.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/addc.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/adder.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/calc_controller_moore.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/debouncer.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/exclusiveOr.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/hold.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/load.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/mux5.vhd" \
+"../../../../project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/Calculator_TB.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,22 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calc_p2/Calc_p2.srcs/sim_1/new/AM_4_TB.vhd,1681946465,vhdl,,,,am_4_tb,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calc_p2/Calc_p2.srcs/sources_1/imports/Project_2 2700/DFFR_4.vhd,1680748169,vhdl,,,,dffr_4,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calc_p2/Calc_p2.srcs/sources_1/new/ADDR_MUX.vhd,1681175865,vhdl,,,,addr_mux,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calc_p2/Calc_p2.srcs/sources_1/new/AM_4.vhd,1681771128,vhdl,,,,am_4,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calc_p2/Calc_p2.srcs/sources_1/new/DFFR.vhd,1680748234,vhdl,,,,dffr,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calc_p2/Calc_p2.srcs/sources_1/new/DFFR_9.vhd,1681347269,vhdl,,,,dffr_9,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calc_p2/Calc_p2.srcs/sources_1/new/MAC_4.vhd,1681178362,vhdl,,,,mac_4,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sim_1/new/ALU_ACC_TB.vhd,1681932162,vhdl,,,,alu_acc_tb,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/ALU.vhd,1681780652,vhdl,,,,alu,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/ALU_ACC.vhd,1681924128,vhdl,,,,alu_acc,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/MUX_B.vhd,1681782335,vhdl,,,,mux_b,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/UI_MUX.vhd,1681782362,vhdl,,,,ui_mux,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/addc.vhd,1681343672,vhdl,,,,add_8,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/adder.vhd,1681343671,vhdl,,,,adder,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/exclusiveOr.vhd,1681343671,vhdl,,,,exclusiveor,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/hold.vhd,1681343672,vhdl,,,,hold,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/load.vhd,1681343672,vhdl,,,,load,,,,,,,,
+C:/Users/Cu63H/vivado projects/p2calc_final/p2calc_final.srcs/sources_1/imports/vivado projects/Calculator_3/Calculator_3.srcs/sources_1/new/mux5.vhd,1681345539,vhdl,,,,mux5,,,,,,,,

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Calculator_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Calculator_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="643001fs"></ZoomEndTime>
+      <Cursor1Time time="310000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/Calculator_TB/UI_TB" type="array">
+      <obj_property name="ElementShortName">UI_TB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">UI_TB[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/UUT/U0/UI" type="array">
+      <obj_property name="ElementShortName">UI[7:0]</obj_property>
+      <obj_property name="ObjectShortName">UI[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/ACC_OUT_TB" type="array">
+      <obj_property name="ElementShortName">ACC_OUT_TB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ACC_OUT_TB[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/UUT/U0/U1/DB" type="array">
+      <obj_property name="ElementShortName">DB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DB[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/UUT/U0/U1/q_out" type="array">
+      <obj_property name="ElementShortName">q_out[8:0]</obj_property>
+      <obj_property name="ObjectShortName">q_out[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/E_TB" type="logic">
+      <obj_property name="ElementShortName">E_TB</obj_property>
+      <obj_property name="ObjectShortName">E_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/UUT/U3/d_in" type="logic">
+      <obj_property name="ElementShortName">d_in</obj_property>
+      <obj_property name="ObjectShortName">d_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/UUT/U3/d_out" type="logic">
+      <obj_property name="ElementShortName">d_out</obj_property>
+      <obj_property name="ObjectShortName">d_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/CLK_TB" type="logic">
+      <obj_property name="ElementShortName">CLK_TB</obj_property>
+      <obj_property name="ObjectShortName">CLK_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/RST_TB" type="logic">
+      <obj_property name="ElementShortName">RST_TB</obj_property>
+      <obj_property name="ObjectShortName">RST_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/UI_ADDR_TB" type="array">
+      <obj_property name="ElementShortName">UI_ADDR_TB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">UI_ADDR_TB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/CMD_TB" type="array">
+      <obj_property name="ElementShortName">CMD_TB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CMD_TB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/UUT/U2/op_code" type="array">
+      <obj_property name="ElementShortName">op_code[2:0]</obj_property>
+      <obj_property name="ObjectShortName">op_code[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/ld_m" type="array">
+      <obj_property name="ElementShortName">ld_m[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ld_m[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/ld_ui" type="array">
+      <obj_property name="ElementShortName">ld_ui[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ld_ui[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/stm" type="array">
+      <obj_property name="ElementShortName">stm[3:0]</obj_property>
+      <obj_property name="ObjectShortName">stm[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/stm_ui" type="array">
+      <obj_property name="ElementShortName">stm_ui[3:0]</obj_property>
+      <obj_property name="ObjectShortName">stm_ui[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/add_ui" type="array">
+      <obj_property name="ElementShortName">add_ui[3:0]</obj_property>
+      <obj_property name="ObjectShortName">add_ui[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/addwc_ui" type="array">
+      <obj_property name="ElementShortName">addwc_ui[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addwc_ui[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/add_m" type="array">
+      <obj_property name="ElementShortName">add_m[3:0]</obj_property>
+      <obj_property name="ObjectShortName">add_m[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/addwc_m" type="array">
+      <obj_property name="ElementShortName">addwc_m[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addwc_m[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Calculator_TB/UUT/U0/CE" type="logic">
+      <obj_property name="ElementShortName">CE</obj_property>
+      <obj_property name="ObjectShortName">CE</obj_property>
+   </wvobject>
+</wave_config>

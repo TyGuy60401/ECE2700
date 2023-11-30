@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Calculator_2.srcs/sources_1/new/ALU.vhd" \
+"../../../../Calculator_2.srcs/sources_1/new/addc.vhd" \
+"../../../../Calculator_2.srcs/sources_1/new/adder.vhd" \
+"../../../../Calculator_2.srcs/sources_1/new/exclusiveOr.vhd" \
+"../../../../Calculator_2.srcs/sources_1/new/hold.vhd" \
+"../../../../Calculator_2.srcs/sources_1/new/load.vhd" \
+"../../../../Calculator_2.srcs/sources_1/new/mux5.vhd" \
+"../../../../Calculator_2.srcs/sim_1/new/ALU_TB.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Error: acc didn't add 5 to 7
+Time: 360 ns  Iteration: 0  Process: /Calculator_TB/line__81  File: C:/Users/harrisonharrison/project_3h/project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/Calculator_TB.vhd
+Error: acc discarded value (12) when saving to memory
+Time: 520 ns  Iteration: 0  Process: /Calculator_TB/line__81  File: C:/Users/harrisonharrison/project_3h/project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/Calculator_TB.vhd
+Error: acc didn't add 5 to 12
+Time: 680 ns  Iteration: 0  Process: /Calculator_TB/line__81  File: C:/Users/harrisonharrison/project_3h/project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/Calculator_TB.vhd
+Error: acc discarded value (17) when saving to memory
+Time: 840 ns  Iteration: 0  Process: /Calculator_TB/line__81  File: C:/Users/harrisonharrison/project_3h/project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/Calculator_TB.vhd
+Error: acc didn't add 9 to 17
+Time: 1 us  Iteration: 0  Process: /Calculator_TB/line__81  File: C:/Users/harrisonharrison/project_3h/project_3h.srcs/sources_1/imports/Downloads/Calc.srcs-20230425T220314Z-001/Calculator_TB.vhd
