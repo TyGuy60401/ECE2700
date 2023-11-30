@@ -2,3 +2,6 @@ Running: xsim.dir/TestMicro2_behav/xsimk.exe -simmode gui -wdb TestMicro2_behav.
 Design successfully loaded
 Design Loading Memory Usage: 10804 KB (Peak: 10804 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 11472 KB (Peak: 11472 KB)
+Simulation CPU Usage: 31 ms
