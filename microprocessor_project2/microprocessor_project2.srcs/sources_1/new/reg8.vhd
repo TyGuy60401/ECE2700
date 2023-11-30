@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 11/22/2023 10:33:21 PM
+-- Create Date: 11/30/2023 12:34:19 PM
 -- Design Name: 
--- Module Name: micro2 - Behavioral
+-- Module Name: reg8 - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,23 +31,22 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity micro2 is
-    Port ( clk    : in STD_LOGIC;
-           rst    : in STD_LOGIC;
-           rd     : in STD_LOGIC;
-           wr     : in STD_LOGIC;
-           fetch  : in STD_LOGIC;
-           ld_pc  : in STD_LOGIC;
-           ld_mar : in STD_LOGIC;
-           inc_pc : in STD_LOGIC;
-           op     : in STD_LOGIC_VECTOR (2 downto 0);
-           addr   : out STD_LOGIC_VECTOR (7 downto 0);
-           data   : inout STD_LOGIC_VECTOR (7 downto 0));
-end micro2;
+entity reg8 is
+    Port ( clk : in STD_LOGIC;
+           data_in : in STD_LOGIC_VECTOR (7 downto 0);
+           data_out : out STD_LOGIC_VECTOR (7 downto 0));
+end reg8;
 
-architecture Structural of micro2 is
+architecture Behavioral of reg8 is
+    signal data : std_logic_vector (7 downto 0);
 
 begin
+    process (clk)
+    begin
+        if rising_edge(clk) then
+            data <= data_in;
+        end if;
+    end process;
+    data_out <= data;
 
-
-end Structural;
+end Behavioral;
