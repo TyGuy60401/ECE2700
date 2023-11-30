@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestMicro2_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TestMicro2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="221"></NameColumnWidth>
+      <ValueColumnWidth column_width="92"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="group90" type="group">
+      <obj_property name="label">inputs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestMicro2/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestMicro2/rd" type="logic">
+         <obj_property name="ElementShortName">rd</obj_property>
+         <obj_property name="ObjectShortName">rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestMicro2/wr" type="logic">
+         <obj_property name="ElementShortName">wr</obj_property>
+         <obj_property name="ObjectShortName">wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestMicro2/fetch" type="logic">
+         <obj_property name="ElementShortName">fetch</obj_property>
+         <obj_property name="ObjectShortName">fetch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestMicro2/ld_pc" type="logic">
+         <obj_property name="ElementShortName">ld_pc</obj_property>
+         <obj_property name="ObjectShortName">ld_pc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestMicro2/ld_mar" type="logic">
+         <obj_property name="ElementShortName">ld_mar</obj_property>
+         <obj_property name="ObjectShortName">ld_mar</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestMicro2/inc_pc" type="logic">
+         <obj_property name="ElementShortName">inc_pc</obj_property>
+         <obj_property name="ObjectShortName">inc_pc</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/TestMicro2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestMicro2/op" type="array">
+      <obj_property name="ElementShortName">op[2:0]</obj_property>
+      <obj_property name="ObjectShortName">op[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestMicro2/addr" type="array">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestMicro2/data" type="array">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestMicro2/uut/ALU_inst/Y" type="array">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestMicro2/uut/Acc_inst/data_out" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      <obj_property name="label">acc_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestMicro2/uut/Mem_bus_inst/int_bus" type="array">
+      <obj_property name="ElementShortName">int_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">int_bus[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestMicro2/uut/MAR_inst/data_out" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      <obj_property name="label">mar_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestMicro2/uut/PC_inst/data_out" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      <obj_property name="label">pc_out</obj_property>
+   </wvobject>
+</wave_config>
