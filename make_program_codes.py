@@ -11,8 +11,8 @@ def main():
         lines = fin.readlines()
     
     translation = str.maketrans('', '', '\n')
-    print("type ram_type is array (0 to 255) of std_logic_vector (7 downto 0);")
-    print("signal ram: ram_type := (")
+    print("    type ram_type is array (0 to 255) of std_logic_vector (7 downto 0);")
+    print("    signal ram: ram_type := (")
     for line in lines:
         line = line.translate(translation)
         line_split = line.split()
@@ -23,8 +23,8 @@ def main():
         if len(line_split) > 1:
             part_2 = f"{num_spaces * ' '}X\"{line_split[1]}\",".upper()
 
-        print(f"op_{op_code},{part_2}")
-    print("others=>X\"FF\" );")
+        print(f"    op_{op_code},{part_2}")
+    print("    others=>X\"FF\" );", end='')
 
 if __name__ == '__main__':
     main()

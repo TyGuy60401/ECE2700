@@ -1,9 +1,12 @@
 ldi 9E
 addi AA
-stm 3F
-adcm 3F
-stm 3F
-adci 7b
-xorm 3f
-jc 28
-halt
+ldm a2
+ldi 05
+addm 01
+adci 60
+adci 10
+ldi 80
+adcm 0f
+ldi a0
+xori b0
+xorm 05

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tydav/gitLocals/ECE2700/microprocessor_project3/microprocessor_project3.srcs/sources_1/new/micro3controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'micro3controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tydav/gitLocals/ECE2700/microprocessor_project3/microprocessor_project3.srcs/sim_1/new/TestMicro3-00.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TestMicro3Small'
