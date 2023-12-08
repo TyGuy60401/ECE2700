@@ -1,0 +1,4 @@
+Running: xsim.dir/TestMicro3_behav/xsimk.exe -simmode gui -wdb TestMicro3_behav.wdb -simrunnum 0 -socket 52592
+Design successfully loaded
+Design Loading Memory Usage: 10724 KB (Peak: 10724 KB)
+Design Loading CPU Usage: 30 ms

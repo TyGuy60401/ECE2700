@@ -45,20 +45,21 @@ architecture Behavioral of TestMicro3Small is
 
     type ram_type is array (0 to 255) of std_logic_vector (7 downto 0);
     signal ram: ram_type := (
-    op_ldi,  X"9E",
-    op_addi, X"AA",
-    op_ldm,  X"A2",
-    op_ldi,  X"05",
-    op_addm, X"01",
-    op_adci, X"60",
-    op_adci, X"10",
-    op_ldi,  X"80",
-    op_adcm, X"0F",
-    op_ldi,  X"A0",
-    op_xori, X"B0",
-    op_xorm, X"05",
-    op_jmp,  X"02",
+    op_ldi,  X"55",
+    op_addi, X"20",
+    op_stm,  X"3F",
+    op_ldi,  X"10",
+    op_addi, X"20",
+    op_stm,  X"3F",
+    op_ldi,  X"10",
+    op_addm, X"3F",
     others=>X"FF" );
+
+
+
+
+
+
 
 
 

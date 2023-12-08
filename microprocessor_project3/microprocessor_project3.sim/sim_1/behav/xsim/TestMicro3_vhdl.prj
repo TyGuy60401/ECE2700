@@ -15,7 +15,7 @@ vhdl xil_defaultlib  \
 "../../../../microprocessor_project3.srcs/sources_1/new/micro3controller.vhd" \
 "../../../../../microprocessor_project2/microprocessor_project2.srcs/sources_1/new/reg8.vhd" \
 "../../../../../alu_project1/alu_project1.srcs/sources_1/new/xor_single.vhd" \
-"../../../../microprocessor_project3.srcs/sim_1/new/TestMicro3-00.vhd" \
+"../../../../microprocessor_project3.srcs/sim_1/new/TestMicro3.vhd" \
 
 # Do not sort compile order
 nosort

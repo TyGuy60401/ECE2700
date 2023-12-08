@@ -42,6 +42,7 @@ entity micro2 is
            inc_pc : in STD_LOGIC;
            op     : in STD_LOGIC_VECTOR (2 downto 0);
            addr   : out STD_LOGIC_VECTOR (7 downto 0);
+           Cout   : out std_logic;
            data   : inout STD_LOGIC_VECTOR (7 downto 0));
 end micro2;
 
@@ -145,4 +146,6 @@ begin
         data_bus => data,
         int_bus => internal_bus
     );
+
+Cout <= carry_sig;
 end Structural;

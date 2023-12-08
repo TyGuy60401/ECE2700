@@ -96,7 +96,7 @@ begin
 	  rst<='1'; clk<='0';
 	  wait for 2ns;
 	  rst<='0';
-	  for i in 1 to 135 loop
+	  for i in 1 to 200 loop
 	    wait for 3 ns;
 	    clk <= '1';
 	    wait for 2 ns;

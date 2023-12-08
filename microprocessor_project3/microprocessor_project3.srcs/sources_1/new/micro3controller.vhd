@@ -45,6 +45,7 @@ architecture Behavioral of micro3controller is
         port ( clk, rst, rd, wr, fetch, ld_pc, ld_mar, inc_pc : in std_logic;
                op : in std_logic_vector (2 downto 0);
                addr : out std_logic_vector (7 downto 0);
+               Cout : out std_logic;
                data : inout std_logic_vector (7 downto 0));
     end component;
 
@@ -91,7 +92,14 @@ architecture Behavioral of micro3controller is
         xorm_0,
         xorm_1,
 
-        jmp
+        stm_0,
+        stm_1,
+
+        jmp,
+        jc,
+        jnc,
+
+        halt
     );
     signal state: Tstate;
     signal next_state: Tstate;
@@ -99,6 +107,7 @@ architecture Behavioral of micro3controller is
     signal debug: std_logic_vector (7 downto 0);
     signal fetch, inc_pc, ld_pc, ld_mar, rd_int, wr_int: std_logic;
     signal op: std_logic_vector (2 downto 0);
+    signal carry_sig: std_logic;
     signal int_bus: std_logic_vector (7 downto 0);
 begin
 
@@ -111,7 +120,7 @@ begin
         end if;
     end process;
 
-    process (state, data, )
+    process (state, data, carry_sig)
     begin
         -- default values same as 'fet' state
         fetch <= '1';
@@ -133,8 +142,12 @@ begin
                     when op_adcm => next_state <= adcm_0;
                     when op_xori => next_state <= xori;
                     when op_xorm => next_state <= xorm_0;
+                    when op_stm  => next_state <= stm_0;
                     when op_jmp  => next_state <= jmp;
-                    when others => next_state <= fet;
+                    when op_jc   => next_state <= jc;
+                    when op_jnc  => next_state <= jnc;
+                    when op_halt => next_state <= halt;
+                    when others  => next_state <= fet;
                 end case;
             
             when ldi => op <= alu_load;
@@ -175,12 +188,35 @@ begin
                 inc_pc <= '0';
                 op <= alu_xor;
             
+            when stm_0 =>
+                ld_mar <= '1';
+                next_state <= stm_1;
+            when stm_1 =>
+                inc_pc <= '0';
+                fetch <= '0';
+                wr_int <= '1';
+                rd_int <= '0';
+                next_state <= fet;
+            
             when jmp =>
                 ld_pc <= '1';
                 inc_pc <= '0';
+            
+            when jc =>
+                if carry_sig = '1' then
+                    ld_pc <= '1';
+                    inc_pc <= '0';
+                end if;
 
-                
-
+            when jnc =>
+                if carry_sig = '0' then
+                    ld_pc <= '1';
+                    inc_pc <= '0';
+                end if;
+            
+            when halt =>
+                inc_pc <= '0';
+                next_state <= halt;
 
 
         end case;
@@ -199,7 +235,8 @@ begin
         ld_pc => ld_pc,
         ld_mar => ld_mar,
         inc_pc => inc_pc,
-        addr => addr
+        addr => addr,
+        Cout => carry_sig
     );
 
 end Behavioral;

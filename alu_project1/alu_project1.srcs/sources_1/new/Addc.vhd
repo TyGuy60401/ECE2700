@@ -45,14 +45,14 @@ component full_add is
           Y, Cout: out std_logic );
 end component;
 
-signal Cb: std_logic := '0';
-signal Co: std_logic;
+-- signal Cb: std_logic := '0';
+-- signal Co: std_logic;
 signal C: std_logic_vector (6 downto 0);
 begin
 
 A0 : full_add port map (A=>A(0),
                         B=>B(0),
-                        Cin=>Cb,
+                        Cin=>Cin,
                         Y=>Y(0),
                         Cout=>C(0));
 A1 : full_add port map (A=>A(1),
@@ -89,7 +89,7 @@ A7 : full_add port map (A=>A(7),
                         B=>B(7),
                         Cin=>C(6),
                         Y=>Y(7),
-                        Cout=>Co);
+                        Cout=>Cout);
 
-Cout <= Co OR Cin;
+-- Cout <= Co OR Cin;
 end Behavioral;
