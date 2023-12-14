@@ -68,7 +68,7 @@ begin
         clk <= '0';
         wait for 20 ms;
         rst_l <= '1';
-        for i in 1 to 30 loop
+        for i in 1 to 150 loop
             wait for 16 ms;
             clk <= not clk;
         end loop;
@@ -79,12 +79,42 @@ begin
     begin
         top_l <= '0';
         bottom_l <= '1';
-        sensor_l <= '1'
+        sensor_l <= '1';
         button_l <= '1';
         wait for 100 ms;
         button_l <= '0';
         wait for 40 ms;
+        top_l <= '1';
         button_l <= '1';
+        wait for 200 ms;
+        bottom_l <= '0';
+        wait for 40 ms;
+        button_l <= '0';
+        wait for 16 ms;
+        button_l <= '1';
+        bottom_l <= '1';
+        wait for 200 ms;
+        top_l <= '0';
+        wait for 40 ms;
+        button_l <= '0';
+        wait for 16 ms;
+        button_l <= '1';
+        top_l <= '1';
+        wait for 80 ms;
+        sensor_l <= '0';
+        wait for 20 ms;
+        sensor_l <= '1';
+        wait for 80 ms;
+        button_l <= '0';
+        wait for 16 ms;
+        button_l <= '1';
+        wait for 40 ms;
+        button_l <= '0';
+        sensor_l <= '0';
+        wait for 16 ms;
+        button_l <= '1';
+        wait for 80 ms;
+        top_l <= '0';
         wait;
     end process;
 

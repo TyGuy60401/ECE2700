@@ -57,8 +57,6 @@ begin
     begin
         if RST_L = '0' then
             state <= idle_top;
-            UP <= '0';
-            DOWN <= '0';
         elsif rising_edge(CLK) then
             state <= next_state;
         end if;
@@ -68,6 +66,8 @@ begin
     begin
         case state is
             when idle_top => 
+                DOWN <= '0';
+                UP <= '0';
                 if (BUTTON_L = '0' and BOTTOM_L = '1' and SENSOR_L = '1') then
                     next_state <= going_down;
                 elsif (BUTTON_L = '0') and (BOTTOM_L = '0' or SENSOR_L = '0') then
@@ -75,6 +75,8 @@ begin
                 else next_state <= idle_top;
                 end if;
             when going_down =>
+                DOWN <= '1';
+                UP <= '0';
                 if (BUTTON_L = '1' and SENSOR_L = '0') then
                     next_state <= going_up;
                 elsif (BUTTON_L = '1' and SENSOR_L = '1' and BOTTOM_L = '1') then
@@ -83,6 +85,8 @@ begin
                     next_state <= idle_bottom;
                 end if;
             when idle_bottom =>
+                DOWN <= '0';
+                UP <= '0';
                 if (BUTTON_L = '0' and TOP_L = '0') then
                     next_state <= going_down;
                 elsif (BUTTON_L = '0' and TOP_L = '1') then
@@ -91,6 +95,8 @@ begin
                     next_state <= idle_bottom;
                 end if;
             when going_up =>
+                DOWN <= '0';
+                UP <= '1';
                 if (BUTTON_L = '0' or TOP_L = '0') then
                     next_state <= idle_top;
                 else
@@ -102,7 +108,5 @@ begin
         end case;
     end process;
 
-    DOWN <= '1' when state = going_down else '0';
-    UP <= '1' when state = going_up else '0';
 
 end Behavioral;
