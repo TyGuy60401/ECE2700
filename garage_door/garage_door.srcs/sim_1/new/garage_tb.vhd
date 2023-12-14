@@ -79,7 +79,7 @@ begin
     begin
         top_l <= '0';
         bottom_l <= '1';
-        sensor_l <= '1';
+        sensor_l <= '1'
         button_l <= '1';
         wait for 100 ms;
         button_l <= '0';

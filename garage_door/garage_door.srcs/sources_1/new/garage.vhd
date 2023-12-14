@@ -49,18 +49,22 @@ architecture Behavioral of garage is
     signal state : door_state;
     signal next_state : door_state;
 
+    signal button_int : std_logic;
+
 begin
 
     process (CLK, RST_L)
     begin
         if RST_L = '0' then
             state <= idle_top;
+            UP <= '0';
+            DOWN <= '0';
         elsif rising_edge(CLK) then
             state <= next_state;
         end if;
     end process;
 
-    process (state, BUTTON_L, BOTTOM_L, SENSOR_L)
+    process (state, BUTTON_L, BOTTOM_L, SENSOR_L, TOP_L)
     begin
         case state is
             when idle_top => 
@@ -70,12 +74,35 @@ begin
                     next_state <= going_up;
                 else next_state <= idle_top;
                 end if;
+            when going_down =>
+                if (BUTTON_L = '1' and SENSOR_L = '0') then
+                    next_state <= going_up;
+                elsif (BUTTON_L = '1' and SENSOR_L = '1' and BOTTOM_L = '1') then
+                    next_state <= going_down;
+                else
+                    next_state <= idle_bottom;
+                end if;
+            when idle_bottom =>
+                if (BUTTON_L = '0' and TOP_L = '0') then
+                    next_state <= going_down;
+                elsif (BUTTON_L = '0' and TOP_L = '1') then
+                    next_state <= going_up;
+                else
+                    next_state <= idle_bottom;
+                end if;
+            when going_up =>
+                if (BUTTON_L = '0' or TOP_L = '0') then
+                    next_state <= idle_top;
+                else
+                    next_state <= going_up;
+                end if;
             
             when others =>
                 next_state <= idle_top;
         end case;
     end process;
 
-    DOWN <= '1' when state = going_down;
+    DOWN <= '1' when state = going_down else '0';
+    UP <= '1' when state = going_up else '0';
 
 end Behavioral;
