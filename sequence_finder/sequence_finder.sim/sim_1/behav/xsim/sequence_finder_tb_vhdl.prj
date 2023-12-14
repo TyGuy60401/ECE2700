@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sequence_finder.srcs/sources_1/new/ls74.vhd" \
+"../../../../sequence_finder.srcs/sources_1/new/sequence_finder.vhd" \
+"../../../../sequence_finder.srcs/sim_1/new/sequence_finder_tb.vhd" \
+
+# Do not sort compile order
+nosort
