@@ -11,14 +11,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="788.268 ns"></ZoomEndTime>
-      <Cursor1Time time="4.590 ns"></Cursor1Time>
+      <ZoomEndTime time="362.001 ns"></ZoomEndTime>
+      <Cursor1Time time="410.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="221"></NameColumnWidth>
-      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+      <ValueColumnWidth column_width="64"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="5" />
    <wvobject fp_name="/sequence_finder_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -36,7 +36,7 @@
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
    <wvobject fp_name="vbus16" type="vbus">
-      <obj_property name="label">New Virtual Bus</obj_property>
+      <obj_property name="label">Q</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/sequence_finder_tb/uut/q1_ls74/Q_H" type="logic">
@@ -45,15 +45,11 @@
          <obj_property name="ObjectShortName">Q_H</obj_property>
          <obj_property name="label">Q1</obj_property>
       </wvobject>
-      <wvobject fp_name="/sequence_finder_tb/uut/q2_ls74/Q_H" type="logic">
+      <wvobject fp_name="/sequence_finder_tb/uut/q0_ls74/Q_H" type="logic">
          <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">Q_H</obj_property>
          <obj_property name="ObjectShortName">Q_H</obj_property>
-         <obj_property name="label">Q2</obj_property>
+         <obj_property name="label">Q0</obj_property>
       </wvobject>
-   </wvobject>
-   <wvobject fp_name="/sequence_finder_tb/uut/q1_ls74/D" type="logic">
-      <obj_property name="ElementShortName">D</obj_property>
-      <obj_property name="ObjectShortName">D</obj_property>
    </wvobject>
 </wave_config>

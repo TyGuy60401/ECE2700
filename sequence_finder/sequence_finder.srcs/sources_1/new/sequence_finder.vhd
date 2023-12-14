@@ -45,38 +45,66 @@ architecture Behavioral of sequence_finder is
     end component;
 
     signal Q : std_logic_vector (1 downto 0);
-    signal next_Q : std_logic_vector (1 downto 0);
+    signal not_Q : std_logic_vector (1 downto 0);
+
+    signal not_RST : std_logic;
+    signal in1 : std_logic;
+    signal in0 : std_logic;
 
 
 begin
+    not_RST <= not RST;
     q1_ls74: ls74 port map (
         CLK => CLK,
-        RST_L =>  not RST,
-        SET_L => '0',
-        D => Q(1),
-        Q_H => next_Q(1),
-        Q_L => open
+        RST_L => not_RST,
+        SET_L => '1',
+        D => in1,
+        Q_H => Q(1),
+        Q_L => not_Q(1)
     );
 
-    q2_ls74: ls74 port map (
+    q0_ls74: ls74 port map (
         CLK => CLK,
-        RST_L => not RST,
-        SET_L => '0',
-        D => Q(0),
-        Q_H => next_Q(0),
-        Q_L => open
+        RST_L => not_RST,
+        SET_L => '1',
+        D => in0,
+        Q_H => Q(0),
+        Q_L => not_Q(0)
     );
 
-    Q(1) <= Q(0) and SIG;
-    Q(0) <= SIG;
+    -- in1 <= Q(0) and SIG;
+    -- in1 <= (not_Q(0) nor not SIG);
+    -- in1 <= (Q(0) and SIG) or (Q(0) and Q(1));
+    -- in1 <= Q(0) and (SIG or Q(1));
+    -- in1 <= not_Q(0) nand (SIG nor Q(1));
+    -- in1 <= not_Q(0) nand (not SIG nor not_Q(1));
+    -- in1 <= not_Q(0) nor (SIG nand Q(1));
+    -- in1 <= not (Q(0) nor Q(0))
+    -- in1 <= Q(0) nand (SIG nor Q(1));
+    -- in1 <= not_Q(0) nand (SIG nor Q(1));
+    -- in1 <= not_Q(0) nor (not SIG and not_Q(1));
+    in1 <= not_Q(0) nor (SIG nor Q(1));
 
-    Found <= Q(1) and not SIG;
+    in0 <= SIG;
+    
+    
+    -- Found <= Q(1) and not_Q(0);
+    Found <= not_Q(1) nor Q(0);
 
-    process (CLK)
-    begin
-        if rising_edge(CLK) then
-            Q <= next_Q;
-        end if;
-    end process;
+
+    -- process (CLK)
+    -- begin
+    --     if rising_edge(CLK) then
+        --     Found <= not_Q(1) nor SIG;
+        --     Found <= Q(1) and not SIG;
+        -- end if;
+    -- end process;
+
+    -- process (CLK)
+    -- begin
+    --     if rising_edge(CLK) then
+    --         Q <= next_Q;
+    --     end if;
+    -- end process;
     
 end Behavioral;

@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tydav/gitLocals/ECE2700/sequence_finder/sequence_finder.srcs/sim_1/new/sequence_finder_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'sequence_finder_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tydav/gitLocals/ECE2700/sequence_finder/sequence_finder.srcs/sources_1/new/sequence_finder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sequence_finder'

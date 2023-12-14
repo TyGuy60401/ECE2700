@@ -58,7 +58,7 @@ begin
     clk <= '0';
     wait for 10 ns;
     rst <= '0';
-        for i in 1 to 20 loop
+        for i in 1 to 40 loop
             wait for 10 ns;
             clk <= not clk;
         end loop;
