@@ -39,12 +39,14 @@ architecture Behavioral of Add_tb is
     component Add is 
         Port ( A    : in std_logic_vector (7 downto 0);
                B    : in std_logic_vector (7 downto 0);
+               Cin  : in STD_LOGIC;
                Y    : out std_logic_vector (7 downto 0);
                Cout : out std_logic);
     end component;
 
     -- Input signal declaration
     signal A, B : std_logic_vector (7 downto 0) := "00000000";
+    signal Cin : std_logic;
     
     -- Output signal declaration
     signal Y : std_logic_vector (7 downto 0);
@@ -52,11 +54,12 @@ architecture Behavioral of Add_tb is
 
 begin
     -- do the uut
-    uut: Add port map (A => A, B => B, Y => Y, Cout => Cout);
+    uut: Add port map (A => A, B => B, Y => Y, Cin => Cin, Cout => Cout);
 
     -- Stimulus process
     process
     begin
+        Cin <= '0';
         A <= "11111111";
         wait for 20 ns;
         B <= "00000001";
@@ -64,6 +67,8 @@ begin
         A <= "00000000";
         wait for 20 ns;
         B <= "01010101";
+        wait for 10 ns;
+        Cin <= '1';
         wait for 20 ns;
         A <= "11111111";
         wait for 20 ns;
